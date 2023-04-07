@@ -1,11 +1,16 @@
 # linecount
-A simple python script designed to count how many lines of code you've written within a project directory.
+A simple python command line tool designed to count how many lines of code you've written within a project directory.
 
-# Example usage and output
+# Usage
 
 ```
-C:\Users\jakei\Desktop>python linecount.py
-Please input a valid directory: C:\xampp\htdocs
+linecount.py [-h] -d DIR -e EXTS [EXTS ...]
+```
+
+# Example usage/output
+
+```
+C:\Users\jakei\Desktop>python linecount.py -d C:\xampp\htdocs -e js html css php py
 C:\xampp\htdocs\css\home.css: 118 lines
 C:\xampp\htdocs\css\loading.css: 35 lines
 C:\xampp\htdocs\css\patient.css: 36 lines
